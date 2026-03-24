@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changa Hotel - Mohammed Tahir</title>
+    <style>
+        /* PROFESSIONAL WATERMARK - AIJAZ ALI */
+        body::after {
+            content: "CREATED BY AIJAZ ALI";
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            font-size: 3rem;
+            color: rgba(0, 0, 0, 0.08); /* Faint but clearly visible */
+            z-index: 9999; 
+            white-space: nowrap;
+            pointer-events: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: -30px auto 20px;
+            padding: 0 15px;
+            position: relative;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #e67e22;
+            margin-bottom: 10px;
+        }
+
+        /* Team Section */
+        .staff-grid {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+            gap: 10px;
+        }
+
+        .staff-member {
+            flex: 1;
+            font-size: 0.85rem;
+        }
+
+        .staff-img {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 8px;
+            border: 2px solid #ddd;
+        }
+
+        /* Menu Section */
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .price {
+            color: #e67e22;
+            font-weight: bold;
+        }
+
+        .btn {
+            background: #e67e22;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 20px;
+            position: relative;
+            z-index: 10000; /* Keeps button clickable */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 style="margin:0;">CHANGA HOTEL</h1>
+        <p>Gabol Stop, Gadap Town</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="profile.jpg" alt="Mohammed Tahir" class="profile-img">
+            <h2 style="margin:0;">Mohammed Tahir</h2>
+            <p style="color: #666; margin-top: 5px;">Proprietor of Changa Hotel</p>
+        </div>
+
+        <div class="card">
+            <h3 style="margin-top:0; color:#2c3e50;">Our Service Staff</h3>
+            <div class="staff-grid">
+                <div class="staff-member">
+                    <img src="waiter1.jpg" class="staff-img">
+                    <br><strong>Mohammed Amir</strong>
+                </div>
+                <div class="staff-member">
+                    <img src="waiter2.jpg" class="staff-img">
+                    <br><strong>Abdul Razaq</strong>
+                </div>
+                <div class="staff-member">
+                    <img src="waiter3.jpg" class="staff-img">
+                    <br><strong>Zubair Ahmed</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3 style="margin-top:0; color:#2c3e50;">Our Specialties</h3>
+            <div class="menu-item"><span>Doodh Patti (Special)</span> <span class="price">60/-</span></div>
+            <div class="menu-item"><span>Karak Chai</span> <span class="price">50/-</span></div>
+            <div class="menu-item"><span>Lacha Paratha</span> <span class="price">80/-</span></div>
+            <div class="menu-item"><span>Omelette</span> <span class="price">70/-</span></div>
+            
+            <a href="https://maps.app.goo.gl/nBNViAz8GePNBWri6" class="btn">View Location</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Changa Hotel. Created by **Aijaz Ali**.</p>
+    </footer>
+
+</body>
+</html>
