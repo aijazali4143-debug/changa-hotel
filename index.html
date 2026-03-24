@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changa Hotel - Mohammed Tahir</title>
+    <style>
+        /* Watermark Styles */
+        body::before {
+            content: "Mohammed Tahir";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            font-size: 5rem;
+            color: rgba(0, 0, 0, 0.03); /* Very faint grey */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: rotate(-45deg);
+            z-index: -1;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1544787210-2211d44b565a?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            padding: 2rem 5%;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .section {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        /* Profile & Waiter Images */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #e67e22;
+            object-fit: cover;
+        }
+
+        .team-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .waiter-card {
+            margin: 10px;
+        }
+
+        .waiter-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: #eee;
+            border: 2px solid #ddd;
+        }
+
+        /* Menu Section */
+        .menu-table {
+            width: 100%;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .menu-table td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #e67e22;
+            text-align: right;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #e67e22;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Changa Hotel | ڇاڱا ھوٽل</h1>
+    </header>
+
+    <div class="hero">
+        <h2>Authentic Taste at Gabol Stop</h2>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <img src="profile.jpg" alt="Mohammed Tahir" class="profile-img" onerror="this.src='https://via.placeholder.com/150?text=MT'">
+            <h2>Mohammed Tahir</h2>
+            <p>Proprietor of Changa Hotel</p>
+        </div>
+
+        <div class="section">
+            <h3>Our Service Staff</h3>
+            <div class="team-grid">
+                <div class="waiter-card">
+                    <img src="waiter1.jpg" class="waiter-img" onerror="this.src='https://via.placeholder.com/80?text=Ali'">
+                    <p><strong>Ali</strong></p>
+                </div>
+                <div class="waiter-card">
+                    <img src="waiter2.jpg" class="waiter-img" onerror="this.src='https://via.placeholder.com/80?text=Ahmed'">
+                    <p><strong>Ahmed</strong></p>
+                </div>
+                <div class="waiter-card">
+                    <img src="waiter3.jpg" class="waiter-img" onerror="this.src='https://via.placeholder.com/80?text=Bilal'">
+                    <p><strong>Bilal</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Our Specialties</h3>
+            <table class="menu-table">
+                <tr><td>Doodh Patti (Special)</td><td class="price">60/-</td></tr>
+                <tr><td>Karak Chai</td><td class="price">50/-</td></tr>
+                <tr><td>Lacha Paratha</td><td class="price">80/-</td></tr>
+                <tr><td>Omelette</td><td class="price">70/-</td></tr>
+            </table>
+            <a href="https://maps.app.goo.gl/nBNViAz8GePNBWri6" class="btn">View Location</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 Changa Hotel. Managed by Mohammed Tahir.</p>
+    </footer>
+
+</body>
+</html>
